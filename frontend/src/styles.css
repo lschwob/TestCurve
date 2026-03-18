@@ -1,0 +1,121 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #14213d;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb;
+}
+
+.container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 0 16px 40px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+svg {
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.axis {
+  stroke: #8d99ae;
+  stroke-width: 1;
+}
+
+.line {
+  fill: none;
+  stroke-width: 3;
+}
+
+.line.current {
+  stroke: #ef233c;
+}
+
+.line.simulated {
+  stroke: #2b2d42;
+  stroke-dasharray: 8 4;
+}
+
+.point {
+  fill: #ef233c;
+  cursor: grab;
+}
+
+.label,
+.rate {
+  font-size: 12px;
+  fill: #2b2d42;
+}
+
+.panel {
+  background: #fff;
+  margin-top: 18px;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.inline-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 13px;
+}
+
+input,
+button {
+  border: 1px solid #c5cedd;
+  border-radius: 6px;
+  padding: 7px 8px;
+  font-size: 14px;
+}
+
+button {
+  background: #2b2d42;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.93;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #edf0f6;
+}
+
+.advice li {
+  margin-bottom: 6px;
+}
+
+.error {
+  color: #d90429;
+  font-weight: 600;
+}
